@@ -1,0 +1,31 @@
+.admin-outer{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+.admin-box{
+    background-color: transparent;
+    width:80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two items per line */
+     grid-gap: 20px; /* Gap between grid items */
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    border: black solid;
+    border-radius: 20%;
+}
+.admin-btn{
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.btn-content{
+    padding: 20px;
+    width: 150px;
+}
