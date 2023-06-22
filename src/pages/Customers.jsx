@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import axios from "../assets/axios.jsx";
@@ -57,6 +58,11 @@ const GetCustomer = () => {
     
   }
 
+  const navigate = useNavigate();
+
+  const addCustomer = () => {
+    navigate('/addCustomer');
+};
 
 //console.log(myData);
 if (Array.isArray(myData)){
@@ -69,8 +75,9 @@ if (Array.isArray(myData)){
           <Row>
             <Col lg="12">
               <div className=" d-flex align-items-center gap-3 mb-5">
-                <input type="text" id="search" className="search" value={searchValue} onChange={handleInputChange} placeholder="Phone/Pan/Email/Aadhaar" />
-                <button className="search" onClick={getInput}>Search</button>
+                <input type="text" id="search" className="search" value={searchValue} onChange={(e) => handleInputChange(e)} placeholder="Phone/Pan/Email/Aadhaar" />
+                <button className="search" onClick={(e) => getInput(e)}>Search</button>
+                <button Link to className="search" onClick={(e) => addCustomer(e)}>Add Customer</button>
               </div>
             </Col>
           </Row>      
@@ -120,8 +127,8 @@ else{
           <Row>
             <Col lg="12">
               <div className=" d-flex align-items-center gap-3 mb-5">
-                <input type="text" id="search" className="search" value={searchValue} onChange={handleInputChange} placeholder="Phone/Pan/Email/Aadhaar" />
-                <button className="search" onClick={getInput}>Search</button>
+                <input type="text" id="search" className="search" value={searchValue} onChange={(e) => handleInputChange(e)} placeholder="Phone/Pan/Email/Aadhaar" />
+                <button className="search" onClick={(e) => getInput(e)}>Search</button>
               </div>
             </Col>
           </Row>      

@@ -15,30 +15,50 @@ const Admin=()=>{
 
     const navigate = useNavigate();
 
-  const navigateCustomer = () => {
-    navigate('/customers');//fix this
-  };
+    const navigateCar = () => {
+        navigate('/cars');
+    };
+
+    const navigateCustomer = () => {
+        navigate('/customers');
+    };
+
+    const navigateEmployee = () => {
+        navigate('/employees');
+    };
+
+    const navigateDriver = () => {
+        navigate('/drivers');
+    };
+
+    const navigateBooking = () => {
+        navigate('/bookings');
+    };
+
+    const navigatePayment = () => {
+    };
+    navigate('/payments');
 
 	return(
         <div className = "admin-outer">
             <div className = "admin-box">
                 <div className = "admin-btn">
-                    <Button className = "btn-content">Car</Button>
+                    <Button onClick={navigateCar} className = "btn-content">Car</Button>
                 </div>
                 <div className = "admin-btn">
                     <Button onClick={navigateCustomer} className = "btn-content">Customer</Button>
                 </div>
                 <div className = "admin-btn">
-                    <Button className = "btn-content">Employee</Button>
+                    <Button onClick={navigateEmployee} className = "btn-content">Employee</Button>
                 </div>
                 <div className = "admin-btn">
-                    <Button className = "btn-content">Driver</Button>
+                    <Button onClick={navigateDriver} className = "btn-content">Driver</Button>
                 </div>
                 <div className = "admin-btn">
-                    <Button className = "btn-content">Booking</Button>
+                    <Button onClick={navigateBooking} className = "btn-content">Booking</Button>
                 </div>
                 <div className = "admin-btn">
-                    <Button className = "btn-content">Payment</Button>
+                    <Button onClick={navigatePayment} className = "btn-content">Payment</Button>
                 </div>
             </div>
         </div>

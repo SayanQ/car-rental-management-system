@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Button } from "reactstrap";
+import { useNavigate } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 import axios from "../assets/axios.jsx";
@@ -58,6 +59,12 @@ const GetDriverDetails = () => {
   }
 
 
+  const navigate = useNavigate();
+
+  const addDriver = () => {
+    navigate('/addDriver');
+};
+
 //console.log(myData);
 if (Array.isArray(myData)){
   return (      
@@ -71,6 +78,7 @@ if (Array.isArray(myData)){
               <div className=" d-flex align-items-center gap-3 mb-5">
                 <input type="text" id="search" className="search" value={searchValue} onChange={handleInputChange} placeholder="Phone/Pan/Email/Aadhaar" />
                 <button className="search" onClick={getInput}>Search</button>
+                <button className="search" onClick={(e) => addDriver(e)}>Add Driver</button>
               </div>
             </Col>
           </Row>      

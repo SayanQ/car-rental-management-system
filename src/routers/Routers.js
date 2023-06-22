@@ -7,15 +7,20 @@ import About from "../pages/About";
 import Cars from "../pages/Cars";
 import CarListing from "../pages/CarListing";
 import CarDetails from "../pages/CarDetails";
+import AddCar from "../pages/AddCar";
 import Drivers from "../pages/Drivers";
+import AddDriver from "../pages/AddDriver";
 import Customers from "../pages/Customers";
+import AddCustomer from "../pages/AddCustomer";
 //import CustomerDetails from "../pages/CustomerDetails";
 import Employees from "../pages/Employees";
+import AddEmployee from "../pages/AddEmployee";
 import Bookings from "../pages/Bookings";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Privacy from "../pages/Privacy";
 import Admin from "../pages/Admin";
+import Payments from "../pages/Payments";
 
 
 const Routers = () => {
@@ -28,11 +33,16 @@ const Routers = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/cars" element={<Cars />} />
+      <Route path="/addCar" element={<AddCar />} />
       <Route path="/drivers" element={<Drivers />} />
+      <Route path="/addDriver" element={<AddDriver />} />
       <Route path="/customers" element={<Customers />} />
+      <Route path="/addCustomer" element={<AddCustomer />} />
       {/*<Route path="/customersDetails" element={<CustomerDetails />} />*/}
       <Route path="/employees" element={<Employees />} />
+      <Route path="/addEmployee" element={<AddEmployee />} />
       <Route path="/bookings" element={<Bookings />} />
+      <Route path="/payments" element={<Payments />} />
       <Route path="/cars/:slug" element={<CarDetails />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/privacy" element={<Privacy />} />
