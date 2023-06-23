@@ -1,0 +1,24 @@
+.outer{
+    margin:50px auto;
+    width:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: transparent;
+    margin:auto;
+    padding: 50px;
+
+    
+}
+
+.element-div{
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.sub-btn{
+    margin: 20px;
+    
+}
