@@ -69,7 +69,7 @@ const GetEmployee = () => {
 if (Array.isArray(myData)){
   return (      
     <Helmet title="Cars">
-      <CommonSection title="Customer" />
+      <CommonSection title="Employees" />
 
       <section>
         <Container>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from 'semantic-ui-react';
 import axios from "../assets/axios.jsx";
+import CommonSection from "../components/UI/CommonSection";
 import "../styles/customer-details.css";
 
 const AddEmployee = () => {
@@ -42,6 +43,7 @@ const AddEmployee = () => {
 
     return (
         <div>
+            <CommonSection title="Employee Registration Page" />
             <Form className="create-form">
                 <Form.Field>
                     <label>Name</label>

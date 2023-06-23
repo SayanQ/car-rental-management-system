@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Form } from 'semantic-ui-react';
 import axios from "../assets/axios.jsx";
+import CommonSection from "../components/UI/CommonSection";
 import "../styles/customer-details.css";
 
 const AddDriver = () => {
@@ -35,6 +36,7 @@ const AddDriver = () => {
 
     return (
         <div>
+        <CommonSection title="Driver Registration Page" />
             <Form className="create-form">
                 <Form.Field>
                     <label>Name</label>

@@ -32,19 +32,6 @@ const GetCarDetails = () => {
     }
   }
 
-  const getInput = (e) => {
-    setSearchValue(searchValue);
-    getCar();
-  };
-
-  const handleInputChange = (e) => {
-    setSearchValue(e.target.value);
-  };
-
-
-  useEffect(() => {
-    getCar();
-  },[searchValue]);
 
   const deleteCar = async () => {
     
@@ -62,15 +49,33 @@ const GetCarDetails = () => {
 
   const addCar = () => {
     navigate('/addCar');
-};
+  }
+
+  const updateCar = async () => {
+    navigate(`/updateCar/${myData.car_No}`);
+  }
 
 
+  const getInput = () => {
+    setSearchValue(searchValue);
+    getCar();
+  };
+
+  const handleInputChange = (e) => {
+    setSearchValue(e.target.value);
+  };
+
+
+  useEffect(() => {
+    getCar();
+  },[]);
+
+  
 //console.log(myData);
 if (Array.isArray(myData)){
   return (      
     <Helmet title="Cars">
-      <CommonSection title="Customer" />
-
+    <CommonSection title="Cars" />
       <section>
         <Container>
           <Row>
@@ -110,7 +115,7 @@ if (Array.isArray(myData)){
                       <td>{car.year_Of_Manufacturing}</td>
                       <td>{car.km_Driven}</td>
                       <td>{car.sitting_Capacity}</td>
-                      <td>{car.km_Driven}</td>
+                      <td>{car.boot_space}</td>
                       <td>{car.charges_Per_Hour}</td>
                     </tr>
                     
@@ -171,7 +176,7 @@ else{
                     <td>{myData.sitting_Capacity}</td>
                     <td>{myData.boot_space}</td>
                     <td>{myData.charges_Per_Hour}</td>                    
-                  <td><Button>Update</Button></td>
+                  <td><Button onClick={(e) => updateCar(e)}>Update</Button></td>
                   <td><Button onClick={deleteCar}>Delete</Button></td>
                 </tr>
               </tbody>
