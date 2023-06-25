@@ -1,3 +1,100 @@
+import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
+
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardTitle,
+  MDBCardText,
+  MDBCardImage,
+  MDBRow,
+  MDBCol,
+  MDBBtn
+} from 'mdb-react-ui-kit';
+
+const SignUp= () => {
+
+    const navigate = useNavigate();
+
+    const navigateAdmin = () => {
+        navigate('/addEmployee');
+    };
+
+    const navigateUser = () => {
+        navigate('/addCustomer');
+    };
+
+    const navigateDriver = () => {
+        navigate('/addDriver');
+    };
+
+  return (
+    <div className='outer-most' style={{margin:"25px auto",padding:"20px"}}>
+    <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
+
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImage
+            src='https://media.istockphoto.com/id/1456995779/photo/young-male-website-developer-sitting-front-of-computers-with-coded-data-on-screen-and-smiling.jpg?b=1&s=612x612&w=0&k=20&c=y51fD07PCstEbW1Izt4VsTMDTD6ZfkQFl0o_k37LpwY='
+            alt='...'
+            position='top'
+          />
+          <MDBCardBody>
+            <MDBCardTitle>Admin</MDBCardTitle>
+            <MDBCardText>
+              
+            </MDBCardText>
+            <MDBBtn outline rounded className='mx-2' color='dark' onClick={navigateAdmin}>
+                Admin Registration
+            </MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImage
+            src='https://images.pexels.com/photos/3584924/pexels-photo-3584924.jpeg?auto=compress&cs=tinysrgb&w=1600'
+            alt='...'
+            position='top'
+          />
+          <MDBCardBody>
+            <MDBCardTitle>User</MDBCardTitle>
+            <MDBCardText>
+              
+            </MDBCardText>
+            <MDBBtn outline rounded className='mx-2' color='dark' onClick={navigateUser}>
+                User Registration
+            </MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      <MDBCol>
+        <MDBCard>
+          <MDBCardImage
+            src='https://images.pexels.com/photos/4391481/pexels-photo-4391481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+            alt='...'
+            position='top'
+          />
+          <MDBCardBody>
+            <MDBCardTitle>Driver</MDBCardTitle>
+            <MDBCardText>
+              
+            </MDBCardText>
+            <MDBBtn outline rounded className='mx-2' color='dark' onClick={navigateDriver}>
+                Driver Registration
+            </MDBBtn>
+          </MDBCardBody>
+        </MDBCard>
+      </MDBCol>
+      
+    </MDBRow>
+
+</div>
+  );
+}
+
+export default SignUp;
+/*
 import React,{useState} from 'react'
 import Slider from "react-slick";
 import { Container } from "reactstrap";
@@ -57,3 +154,4 @@ const SignUp=()=>{
 )};
 
 export default SignUp;
+*/

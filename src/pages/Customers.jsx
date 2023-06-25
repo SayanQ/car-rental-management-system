@@ -42,10 +42,6 @@ const GetCustomer = () => {
   };
 
 
-  useEffect(() => {
-    getCustomer();
-  },[searchValue]);
-
   const deleteCustomer = async () => {
     
     try {
@@ -57,12 +53,21 @@ const GetCustomer = () => {
     }
     
   }
-
   const navigate = useNavigate();
 
   const addCustomer = () => {
     navigate('/addCustomer');
 };
+
+const updateCustomer = () => {
+  navigate(`/updateCustomer/${myData.phone}`);
+};
+
+
+useEffect(() => {
+  getCustomer();
+},[]);
+
 
 //console.log(myData);
 if (Array.isArray(myData)){
@@ -157,7 +162,7 @@ else{
                   <td>{myData.aadhaar_no}</td>
                   <td>{myData.pan_No}</td>
                   <td>{myData.date_Of_Birth}</td>
-                  <td><Button>Update</Button></td>
+                  <td><Button Button onClick={(e) => updateCustomer(e)}>Update</Button></td>
                   <td><Button onClick={deleteCustomer}>Delete</Button></td>
                 </tr>
               </tbody>
@@ -169,8 +174,6 @@ else{
     </Helmet>
   );
 }
-
-  
 };
 
 export default GetCustomer;

@@ -69,13 +69,13 @@ const UpdateCar = () => {
         
     }
 
-  //console.log(carInput);
+  console.log(carInput);
 
     return (
         
         <Helmet title="Car Registration Page">
         <CommonSection title="Update Car Information" />
-            <MDBContainer fluid className='w-75' style={{ margin: '100px auto' }} >
+            <MDBContainer fluid className='bg-dark w-75' style={{ margin: '100px auto' }} >
 
             <MDBRow className='d-flex justify-content-center align-items-center h-100'>
             <MDBCol>
@@ -85,7 +85,7 @@ const UpdateCar = () => {
                 <MDBRow className='g-0'>
 
                     <MDBCol md='6' className="d-none d-md-block">
-                    <MDBCardImage src='https://images.unsplash.com/photo-1542282088-fe8426682b8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80' alt="Sample photo" className="rounded-start" fluid/>
+                    <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp' alt="Sample photo" className="rounded-start" fluid/>
                     </MDBCol>
 
                     <MDBCol md='6'>

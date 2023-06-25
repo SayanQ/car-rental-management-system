@@ -44,7 +44,7 @@ const GetEmployee = () => {
 
   useEffect(() => {
     getEmployee();
-  },[searchValue]);
+  },[]);
 
   const deleteEmployee = async () => {
     
@@ -62,6 +62,10 @@ const GetEmployee = () => {
 
   const addEmployee = () => {
     navigate('/addEmployee');
+};
+
+const updateEmployee = () => {
+  navigate(`/updateEmployee/${myData.phone}`);
 };
 
 
@@ -174,7 +178,7 @@ else{
                   <td>{myData.job_Title}</td>
                   <td>{myData.department}</td>
                   <td>{myData.annual_CTC}</td>
-                  <td><Button>Update</Button></td>
+                  <td><Button onClick={updateEmployee}>Update</Button></td>
                   <td><Button onClick={deleteEmployee}>Delete</Button></td>
                 </tr>
               </tbody>

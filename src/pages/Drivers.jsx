@@ -38,6 +38,10 @@ const GetDriverDetails = () => {
     navigate('/addDriver');
 };
 
+const updateDriver = async () => {
+  navigate(`/updateDriver/${myData.phone}`);
+}
+
   const getInput = (e) => {
     setSearchValue(searchValue);
     getDriver();
@@ -50,7 +54,7 @@ const GetDriverDetails = () => {
 
   useEffect(() => {
     getDriver();
-  },[searchValue]);
+  },[]);
 
   const deleteDriver = async () => {
     
@@ -80,6 +84,7 @@ if (Array.isArray(myData)){
               <div className=" d-flex align-items-center gap-3 mb-5">
                 <input type="text" id="search" className="search" value={searchValue} onChange={handleInputChange} placeholder="Phone/Pan/Email/Aadhaar" />
                 <button className="search" onClick={getInput}>Search</button>
+                <button className="search" onClick={(e) => addDriver(e)}>Add Driver</button>
               </div>
             </Col>
           </Row>      
@@ -130,7 +135,7 @@ if (Array.isArray(myData)){
 else{
   return (      
     <Helmet title="Cars">
-      <CommonSection title="Customer" />
+      <CommonSection title="Driver" />
 
       <section>
         <Container>
@@ -139,7 +144,6 @@ else{
               <div className=" d-flex align-items-center gap-3 mb-5">
                 <input type="text" id="search" className="search" value={searchValue} onChange={handleInputChange} placeholder="Phone/Pan/Email/Aadhaar" />
                 <button className="search" onClick={getInput}>Search</button>
-                <button className="search" onClick={(e) => addDriver(e)}>Add Driver</button>
               </div>
             </Col>
           </Row>      
@@ -177,7 +181,7 @@ else{
                     <td>{myData.driving_Licence_Valid_Till}</td>
                     <td>{myData.km_Driven}</td>
                     <td>{myData.charges_Per_Hour}</td>                    
-                  <td><Button>Update</Button></td>
+                  <td><Button onClick={updateDriver}v>Update</Button></td>
                   <td><Button onClick={deleteDriver}>Delete</Button></td>
                 </tr>
               </tbody>

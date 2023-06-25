@@ -6,33 +6,18 @@ import { MDBBtn } from 'mdb-react-ui-kit';
 const Admin=()=>{ 
     const navigate = useNavigate();
 
-    const navigateCar = () => {
-        navigate('/cars');
-    };
-
-    const navigateCustomer = () => {
-        navigate('/customers');
-    };
-
-    const navigateEmployee = () => {
-        navigate('/employees');
-    };
-
-    const navigateDriver = () => {
-        navigate('/drivers');
-    };
-
     const navigateBooking = () => {
-        navigate('/bookings');
+        navigate('/addBooking');
     };
 
     const navigatePayment = () => {
+        navigate('/customers');
     };
-    navigate('/payments');
+
 
 	return(
         <>
-            <CommonSection title="Admin Dashboard" />
+            <CommonSection title="Customer Dashboard" />
             
             <div className = "admin-outer" style={{
                 width:"50%",
@@ -54,24 +39,13 @@ const Admin=()=>{
                                                         border: "black solid",
                                                         borderRadius: "20%"
                                                         }}>
-                    <MDBBtn outline onClick={navigateCar} className='mx-2' color='light'>
-                        Car
-                    </MDBBtn>
-                    <MDBBtn outline onClick={navigateCustomer} className='mx-2' color='light'>
-                        Customer
-                    </MDBBtn>
-                    <MDBBtn outline onClick={navigateEmployee} className='mx-2' color='light'>
-                        Employee
-                    </MDBBtn>
-                    <MDBBtn outline onClick={navigateDriver} className='mx-2' color='light'>
-                        Driver
-                    </MDBBtn>
                     <MDBBtn outline onClick={navigateBooking} className='mx-2' color='light'>
-                        Booking
+                        BookNow
                     </MDBBtn>
                     <MDBBtn outline onClick={navigatePayment} className='mx-2' color='light'>
                         Payment
                     </MDBBtn>
+                    
                 </div>
             </div>
         </>
