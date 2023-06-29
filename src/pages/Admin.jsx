@@ -27,8 +27,8 @@ const Admin=()=>{
     };
 
     const navigatePayment = () => {
-    };
     navigate('/payments');
+    };
 
 	return(
         <>

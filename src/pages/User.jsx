@@ -11,7 +11,7 @@ const Admin=()=>{
     };
 
     const navigatePayment = () => {
-        navigate('/customers');
+        navigate('/addPayment');
     };
 
 

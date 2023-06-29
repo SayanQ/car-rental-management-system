@@ -10,7 +10,7 @@ const AboutSection = ({ aboutClass }) => {
       style={
         aboutClass === "aboutPage"
           ? { marginTop: "0px" }
-          : { marginTop: "280px" }
+          : { marginTop: "150px", marginBottom:"150px" }
       }
     >
       <Container>
@@ -20,37 +20,17 @@ const AboutSection = ({ aboutClass }) => {
               <h4 className="section__subtitle">About Us</h4>
               <h2 className="section__title">Welcome to car rent service</h2>
               <p className="section__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatum blanditiis esse accusantium dignissimos labore
-                laborum. Veniam, corporis mollitia temporibus, in quaerat vero
-                deleniti amet dolorem repudiandae, pariatur nam dolore! Impedit
-                neque sit ad temporibus quam similique dolor ipsam praesentium
-                sunt.
+              At carrental.com, we pride ourselves on providing exceptional car rental services to our valued customers. 
+              With years of experience in the industry, we have built a strong reputation for reliability, quality, and outstanding customer service.
+
+              Our mission is to make your car rental experience convenient, hassle-free, and enjoyable. We strive to exceed your expectations by 
+              offering a diverse fleet of well-maintained vehicles, flexible rental options, and personalized customer support.
+
+              Safety is our top priority. We meticulously maintain our vehicles to ensure they are in pristine condition and meet the highest 
+              safety standards. Additionally, we regularly inspect and service our fleet to guarantee a smooth and worry-free driving experience for
               </p>
 
-              <div className="about__section-item d-flex align-items-center">
-                <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
-                </p>
-
-                <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
-                </p>
-              </div>
-
-              <div className="about__section-item d-flex align-items-center">
-                <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
-                </p>
-
-                <p className="section__description d-flex align-items-center gap-2">
-                  <i class="ri-checkbox-circle-line"></i> Lorem ipsum dolor sit
-                  amet.
-                </p>
-              </div>
+              
             </div>
           </Col>
 

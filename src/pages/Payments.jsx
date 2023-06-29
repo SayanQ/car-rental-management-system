@@ -62,19 +62,11 @@ console.log(myData);
 if (Array.isArray(myData)){
   return (      
     <Helmet title="Cars">
-      <CommonSection title="Customer" />
+      <CommonSection title="All Payments" />
 
       <section>
         <Container>
-          <Row>
-            <Col lg="12">
-              <div className=" d-flex align-items-center gap-3 mb-5">
-                <input type="text" id="search" className="search" value={searchValue} onChange={handleInputChange} placeholder="Phone/Pan/Email/Aadhaar" />
-                <button className="search" onClick={getInput}>Search</button>
-                
-              </div>
-            </Col>
-          </Row>      
+               
           <div className="table">
             <Table striped bordered hover responsive>
               <thead>

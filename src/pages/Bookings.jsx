@@ -28,25 +28,11 @@ const Drivers = () => {
 
   return (
     <Helmet title="Cars">
-      <CommonSection title="Bookings" />
+      <CommonSection title="All Bookings" />
 
       <section>
         <Container>
-          <Row>
-            <Col lg="12">
-              <div className=" d-flex align-items-center gap-3 mb-5">
-                <span className=" d-flex align-items-center gap-2">
-                  <i class="ri-sort-asc"></i> Sort By
-                </span>
-
-                <select>
-                  <option>Select</option>
-                  <option value="low">Most Experienced</option>
-                  <option value="high">Least Experienced</option>
-                </select>
-              </div>
-            </Col>
-          </Row>      
+                
           <div className="table">
             <Table striped bordered hover responsive>
               <thead>

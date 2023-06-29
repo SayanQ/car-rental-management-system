@@ -29,17 +29,15 @@ const About = () => {
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                Rental vehicles are equipped with essential safety features such as airbags, anti-lock braking systems (ABS), 
+                traction control, stability control, and seat belts. The presence and proper functioning of these features should be 
+                regularly monitored and verified.
                 </p>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                Insurance coverage options will be provided to protect customers in case of accidents, damage, or theft. 
+                It is important for customers to understand the coverage provided, including any deductibles or limitations. 
+                It is also recommended for customers to have their personal auto insurance or consider additional coverage options if needed.
                 </p>
 
                 <div className=" d-flex align-items-center gap-3 mt-4">
@@ -49,7 +47,7 @@ const About = () => {
 
                   <div>
                     <h6 className="section__subtitle">Need Any Help?</h6>
-                    <h4>+00123456789</h4>
+                    <h4>+91 8240-8240</h4>
                   </div>
                 </div>
               </div>

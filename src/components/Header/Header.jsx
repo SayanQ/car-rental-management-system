@@ -35,7 +35,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      {/* ============ header top ============ */}
+      {/*header top */}
       <div className="header__top">
         <Container>
           <Row>
@@ -58,18 +58,13 @@ const Header = () => {
                 <Link to="/SignUp" className=" d-flex align-items-center gap-1">
                   <i class="ri-user-line"></i> SignUp
                 </Link>
-
-                <Link to="/Admin" className=" d-flex align-items-center gap-1">
-                  <i class="ri-user-line"></i> Admin
-                </Link>
-                
               </div>
             </Col>
           </Row>
         </Container>
       </div>
 
-      {/* =============== header middle =========== */}
+      {/*header middle*/}
       <div className="header__middle">
         <Container>
           <Row>
@@ -126,7 +121,7 @@ const Header = () => {
         </Container>
       </div>
 
-      {/* ========== main navigation =========== */}
+      {/*main navigation*/}
 
       <div className="main__navbar">
         <Container>

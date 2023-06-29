@@ -27,7 +27,7 @@ const Login= () => {
     };
 
     const navigateDriver = () => {
-        navigate('/userDriver');
+        navigate('/addDriver');
     };
 
   return (

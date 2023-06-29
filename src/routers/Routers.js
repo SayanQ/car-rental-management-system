@@ -4,31 +4,38 @@ import Home from "../pages/Home";
 import SignUp from "../pages/SignUp";
 import Login from "../pages/Login";
 import About from "../pages/About";
+
 import Cars from "../pages/Cars";
-import CarListing from "../pages/CarListing";
-import CarDetails from "../pages/CarDetails";
 import AddCar from "../pages/AddCar";
 import UpdateCar from "../pages/UpdateCar";
+
 import Drivers from "../pages/Drivers";
 import AddDriver from "../pages/AddDriver";
 import UpdateDriver from "../pages/UpdateDriver";
+
 import Customers from "../pages/Customers";
 import AddCustomer from "../pages/AddCustomer";
 import UpdateCustomer from "../pages/UpdateCustomer";
+
 import Employees from "../pages/Employees";
 import AddEmployee from "../pages/AddEmployee";
 import UpdateEmployee from "../pages/UpdateEmployee";
+
 import Bookings from "../pages/Bookings";
 import AddBooking from "../pages/AddBooking";
 import UpdateBooking from "../pages/UpdateBooking";
+
+import Payments from "../pages/Payments";
+import AddPayment from "../pages/AddPayment";
+
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Privacy from "../pages/Privacy";
-import Payments from "../pages/Payments";
-import AddPayment from "../pages/AddPayment";
+
 import Admin from "../pages/Admin";
 import User from "../pages/User";
 import UserDriver from "../pages/UserDriver";
+
 import TestId from "../pages/TestId";
 
 
@@ -53,7 +60,6 @@ const Routers = () => {
       <Route path="/customers" element={<Customers />} />
       <Route path="/addCustomer" element={<AddCustomer />} />
       <Route path="/updateCustomer/:phone" element={<UpdateCustomer />} />
-      {/*<Route path="/customersDetails" element={<CustomerDetails />} />*/}
       <Route path="/employees" element={<Employees />} />
       <Route path="/updateEmployee/:phone" element={<UpdateEmployee />} />
       <Route path="/addEmployee" element={<AddEmployee />} />
@@ -62,7 +68,6 @@ const Routers = () => {
       <Route path="/updateBooking" element={<updateBooking />} />
       <Route path="/payments" element={<Payments />} />
       <Route path="/addPayment" element={<AddPayment />} />
-      <Route path="/cars/:slug" element={<CarDetails />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/privacy" element={<Privacy />} />
       <Route path="*" element={<NotFound />} />
